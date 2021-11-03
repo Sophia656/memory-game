@@ -47,7 +47,6 @@ const createCards = (size) => {
     for (let i = 0; i < size * size; i++){
         const card = document.createElement('div');
         card.classList.add('card');
-        console.log(i, size)
         const frontSide = document.createElement('img');
         frontSide.classList.add('cover');
         frontSide.src = '../img/chef.png';
@@ -62,7 +61,6 @@ const createCards = (size) => {
 
         card.appendChild(frontSide);
         card.appendChild(backSide);
-        console.log(card);
         cardsBox.push(card);
     };
 
@@ -75,9 +73,7 @@ const createCards = (size) => {
     // проверка на пару
     const checkPair = () => {
 
-        console.log('start check')
         if (openCards.first.childNodes[1].src !== openCards.second.childNodes[1].src){ 
-            
             openCards.first.childNodes[0].classList.remove('hidden');
             openCards.second.childNodes[0].classList.remove('hidden');        
         } else {
@@ -86,8 +82,7 @@ const createCards = (size) => {
             if (isAllOpen === (size * size / 2)){
                 box.style.display = "none";
                 winner.style.display = '';
-            };
-            console.log('isAllOpen', isAllOpen);
+            }
         }
 
         openCards.first = null;
@@ -113,10 +108,9 @@ const createCards = (size) => {
         });
     });
     cardsBox.forEach(function (element, index, array) {
-        console.log('bskjbsjb')
         box.appendChild(element);
     });
-};
+}
 
 
 //выбираем размера поля

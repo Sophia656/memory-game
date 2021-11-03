@@ -17,8 +17,8 @@
     }
     .card img{
         padding: 5px;
-        height: 8vh;
-        width: 8vh;
+        height: 10vh;
+        width: 10vh;
     }
 }
 @media (max-width: 425px) {
@@ -29,8 +29,14 @@
         margin: 30vh 5vw;
     }
     .card img{
-        height: 3vh;
-        width: 3vh;
+        height: 6vh;
+        width: 6vh;
+    }
+    .cover {
+        border: 5px solid #e8f1f9;
+    }
+    .reverse {
+        border: 5px solid #e8f1f9;
     }
     .size {
         width: 80vw;

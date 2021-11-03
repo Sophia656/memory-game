@@ -24,17 +24,8 @@ body {
     font-size: 2rem;
 }
 .title h1 {
-    align-items: center;
-    justify-content: center;
-}
-.title h2 {
-    color: #5f4a6e;
-    text-shadow: 5px 5px 12px #efe0f8,
-    1px 1px 5px #170322,
-    1px 5px 1px #170322,
-    5px 1px 1px #170322;
-    align-items: center;
-    justify-content: center;
+    padding-top: 15vh;
+    font-size: 4rem;
 }
 .title span {
     color: #f0a433;
@@ -54,8 +45,8 @@ body {
     position: relative;
 }
 .card img{
-    width: 4vw;
-    height: 4vw;
+    width: 8vw;
+    height: 8vw;
     padding: 15px;
 }
 .cover {
@@ -91,6 +82,7 @@ body {
 .size_text{
     font-size: 1.5rem;
     text-align: center;
+    padding-bottom: 4vh;
     text-shadow: 1px 1px 5px #170322,
     1px 5px 1px #170322,
     5px 1px 1px #170322;
@@ -104,6 +96,9 @@ body {
     border-radius: 5rem;
     font-size: 1.5rem;
     color: #170322;
+}
+.size_button:last-child{
+    margin-bottom: 0;
 }
 .size_button:hover{
     background-color: #f0a433;
@@ -127,6 +122,7 @@ body {
 }
 .winnerText {
     font-size: 1.5rem;
+    padding-bottom: 2vh;
     text-shadow: 1px 1px 5px #170322,
     1px 5px 1px #170322,
     5px 1px 1px #170322;
@@ -135,7 +131,6 @@ body {
     background-color: #ddd9e5;
     width: 30vw;
     height: 10vh;
-    margin-bottom: 2vh;
     border: 0.25rem solid #170322;
     border-radius: 5rem;
     font-size: 1.5rem;
