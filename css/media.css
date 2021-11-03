@@ -1,0 +1,47 @@
+@media (max-width: 1024px) {
+    html {
+        font-size: 22px;
+    }
+    .card img{
+        padding: 5px;
+        height: 10vh;
+        width: 10vh;
+    }
+}
+@media (max-width: 768px) {
+    html {
+        font-size: 18px;
+    }
+    .title {
+        margin: 25vh 5vw;
+    }
+    .card img{
+        padding: 5px;
+        height: 8vh;
+        width: 8vh;
+    }
+}
+@media (max-width: 425px) {
+    html {
+        font-size: 16px;
+    }
+    .title {
+        margin: 30vh 5vw;
+    }
+    .card img{
+        height: 3vh;
+        width: 3vh;
+    }
+    .size {
+        width: 80vw;
+        height: 60vh;
+        margin: 23vh 0 0 9vw;
+    }
+    .size_button {
+        width: 63vw;
+        height: 12vh;
+    }
+    .winnerButton {
+        font-size: 0.9rem;
+    }
+}
