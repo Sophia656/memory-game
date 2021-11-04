@@ -8,6 +8,7 @@ buttonsBox.style.display = 'none';
 box.style.display = 'none';
 winner.style.display = 'none';
 
+
 // preloading
 let showTitle = () => {
     title.style.opacity = 1;
@@ -107,6 +108,7 @@ const createCards = (size) => {
             }
         });
     });
+
     cardsBox.forEach(function (element, index, array) {
         box.appendChild(element);
     });
@@ -136,11 +138,14 @@ winnerButton.classList.add('winnerButton');
 winner.appendChild(winnerText);
 winner.appendChild(winnerButton);
 
-
 winnerButton.addEventListener('click', () => {
     cardsBox.forEach((card) => {
         card.firstChild.classList.remove('hidden');
+        card.innerHTML = '';
     });
+
+    box.innerHTML = '';
+    cardsBox = [];
     isAllOpen = 0;
     winner.style.display = 'none';
     buttonsBox.style.display = '';
