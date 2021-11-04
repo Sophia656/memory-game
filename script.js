@@ -50,14 +50,14 @@ const createCards = (size) => {
         card.classList.add('card');
         const frontSide = document.createElement('img');
         frontSide.classList.add('cover');
-        frontSide.src = '../img/chef.png';
-        
+        frontSide.src = '/Users/little_hater/Desktop/2021/memory-game/img/chef.png';
+
         const backSide = document.createElement('img');
         backSide.classList.add('reverse');
         if (i < size * size / 2) {
-            backSide.src = `../img/${i}.png`;
+            backSide.src = `/Users/little_hater/Desktop/2021/memory-game/img/${i}.png`;
         } else {
-            backSide.src = `../img/${i - (size * size / 2)}.png`;
+            backSide.src = `/Users/little_hater/Desktop/2021/memory-game/img/${i - (size * size / 2)}.png`;
         };
 
         card.appendChild(frontSide);
