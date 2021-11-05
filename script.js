@@ -9,6 +9,23 @@ box.style.display = 'none';
 winner.style.display = 'none';
 
 
+// disable bdlclick 
+box.addEventListener("click", function() {});
+
+let lastClickElement = null;
+let lastClickTime = Date.now();
+box.addEventListener("click", function(e) {
+    const {target} = e;
+    const now = Date.now();
+    if (target === lastClickElement && (now - lastClickTime) < 2000) {
+        e.preventDefault();
+        e.stopPropagation();
+    }
+    lastClickElement = target;
+    lastClickTime = now;
+}, true);
+
+
 // preloading
 let showTitle = () => {
     title.style.opacity = 1;
@@ -50,14 +67,14 @@ const createCards = (size) => {
         card.classList.add('card');
         const frontSide = document.createElement('img');
         frontSide.classList.add('cover');
-        frontSide.src = '/Users/little_hater/Desktop/2021/memory-game/img/chef.png';
+        frontSide.src = '../img/chef.png';
 
         const backSide = document.createElement('img');
         backSide.classList.add('reverse');
         if (i < size * size / 2) {
-            backSide.src = `/Users/little_hater/Desktop/2021/memory-game/img/${i}.png`;
+            backSide.src = `../img/${i}.png`;
         } else {
-            backSide.src = `/Users/little_hater/Desktop/2021/memory-game/img/${i - (size * size / 2)}.png`;
+            backSide.src = `../img/${i - (size * size / 2)}.png`;
         };
 
         card.appendChild(frontSide);
