@@ -146,7 +146,7 @@ sizes.forEach((size, index) => {
 
 // play again
 const winnerText = document.createElement('h2');
-winnerText.innerHTML = 'YOU ARE WIN!';
+winnerText.innerHTML = 'YOU WIN!';
 winnerText.classList.add('winnerText');
 const winnerButton = document.createElement('button');
 winnerButton.innerHTML = 'LET\'S PLAY AGAIN!';
