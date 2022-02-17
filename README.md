@@ -1,4 +1,4 @@
-# JavaScript
+# Vanilla JavaScript
 
 memory game - memory-foodory
 
